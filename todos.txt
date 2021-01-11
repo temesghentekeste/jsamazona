@@ -16,3 +16,11 @@ II. Design Website
   4. create header, main, footer
   5. style: html, body
   6. style grid-container, header, main, footer
+
+III. Create static home screen
+  1. create ul.products
+  2. create li
+  3. create div.product
+  4. add: .product-image, .product-name, .product-brand, .product-price
+  5. style ul.products and internal divs
+  6. duplicate 2 times to show products

@@ -4,8 +4,7 @@ const data = require('./data');
 const app = express();
 
 app.get('/api/products', (req, res) => {
-  res.send(data);
+  res.send(data.products);
 });
 
-
-app.listen(3000, () => console.log('Server running at port 3000'))
+app.listen(3000, () => console.log('Serve at http://localhost:3000'));

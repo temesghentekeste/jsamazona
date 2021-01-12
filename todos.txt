@@ -63,3 +63,9 @@ VI. Create Node.JS Server
   7. create route for api/products
   8. return products in data.js
   9. run npm start
+
+VII. Load products From Backend
+  1. edit HomeScreen.js
+  2. make render async
+  3. fetch product from '/api/products' in reder()
+  4. make rotuer() asyc and call await HomeScreen.render()

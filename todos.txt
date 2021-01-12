@@ -51,3 +51,15 @@ V. Build Url Router
   8. build parsedUrl() and compare with routes
   9. if route exists render it, else render 404 error
   10. create screens/Error404.js and error message 
+
+
+VI. Create Node.JS Server
+  1. run npm init in root jsamazona folder
+  2. run install express
+  3. create server.js
+  4. add start command as node backend/server.js
+  5. require express
+  6. move data.js from frontend to backend
+  7. create route for api/products
+  8. return products in data.js
+  9. run npm start

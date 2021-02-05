@@ -1,24 +1,25 @@
-import axios from 'axios'
+import axios from 'axios';
+
 const HomeScreen = {
   render: async () => {
-    const response = await axios( {
+    const response = await axios({
       url: 'http://localhost:5000/api/products',
       headers: {
         'Content-type': 'application/json',
-      }
-    })
+      },
+    });
 
 
-    http: if (!response || response.statusText !== 'OK') {
-      return `<div>Error in getting data</div>`;
+    if (!response || response.statusText !== 'OK') {
+      return '<div>Error in getting data</div>';
     }
 
-    const products =  response.data;
+    const products = response.data;
 
     return `
       <ul class="products">
         ${products.map(
-          (product) => `
+    (product) => `
           <li>
               <div class="product">
                 <a href="#/product/${product._id}">
@@ -37,8 +38,8 @@ const HomeScreen = {
                 </div>
               </div>
             </li>
-        `
-        ).join("\n")}
+        `,
+  ).join('\n')}
       </ul>
     `;
   },

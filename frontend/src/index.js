@@ -1,7 +1,7 @@
-import HomeScreen from './screens/HomeScreen.js';
-import ProductScreen from './screens/ProductScreen.js';
-import { parseRequestUrl } from './utils.js';
-import Error404Screen from './screens/Error404Screen.js';
+import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
+import { parseRequestUrl } from './utils';
+import Error404Screen from './screens/Error404Screen';
 
 const routes = {
   '/': HomeScreen,
@@ -12,9 +12,9 @@ const router = async () => {
   const request = parseRequestUrl();
   const parseUrl = (request.resource
     ? `/${request.resource}`
-    : '/') +
-      (request.id ? '/:id' : '') +
-      (request.verb ? `/${request.verb}` : '');
+    : '/')
+      + (request.id ? '/:id' : '')
+      + (request.verb ? `/${request.verb}` : '');
 
   const screen = routes[parseUrl] ? routes[parseUrl] : Error404Screen;
   const main = document.querySelector('#main-container');

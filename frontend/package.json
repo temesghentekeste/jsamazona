@@ -11,6 +11,10 @@
   "author": "Temesghen Tekeste",
   "license": "ISC",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
     "webpack": "^5.20.2",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"

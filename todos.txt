@@ -70,7 +70,8 @@ VII. Load products From Backend
   3. fetch product from '/api/products' in reder()
   4. make rotuer() asyc and call await HomeScreen.render()
 
-IX. Add Webpack
+
+VII. Add Webpack
   1. cd frontend
   2. npm i -D webpack webpack-cli webpack-dev-server
   3. npm uninstall live-server
@@ -83,3 +84,12 @@ IX. Add Webpack
   9. npm start
   10. npm i axios
   11. change fetch to axios in HomeScreen
+
+IX. Install Babel for ES6 Syntax
+  1. npm i -D babel core, cli, node, preset-env
+    npm i -D @babel/core @babel/cli @babel/node @babel/preset-env
+  2. Create .babelrc and set presets to @babel/preset-env
+  3. npm i -D nodemon
+  4. set start: nodemon --watch backend --exec babel-node backend/server.js
+  6. Convert require to import in server.js
+  7. npm start

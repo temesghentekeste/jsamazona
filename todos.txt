@@ -69,3 +69,17 @@ VII. Load products From Backend
   2. make render async
   3. fetch product from '/api/products' in reder()
   4. make rotuer() asyc and call await HomeScreen.render()
+
+IX. Add Webpack
+  1. cd frontend
+  2. npm i -D webpack webpack-cli webpack-dev-server
+  3. npm uninstall live-server
+  4. "start": "webpack-dev-server --mode development --watch-content-base --open"
+     for webpack 4 or 5: webpack serve --watch-content-base --open
+  5. move index.html, style.css, and images to frontend folder
+  6. rename app.js to index.js
+  7. update index.html
+  8. add <script src="main.js"></script> before body
+  9. npm start
+  10. npm i axios
+  11. change fetch to axios in HomeScreen

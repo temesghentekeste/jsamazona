@@ -12,12 +12,13 @@ const getProduct = async (id) => {
     });
 
     if (response.statusText !== 'OK') {
-      throw new Error(response.data.method);
+      throw new Error(response.data.message);
     }
 
     return response.data;
-  } catch (error) {
-    console.log(error);
-    return { error: error.message };
+  } catch (err) {
+    return { error: err.response.data.message || err.message };
   }
 };
+
+export default getProduct;

@@ -9,4 +9,4 @@ const parseRequestUrl = () => {
   };
 };
 
-export default parseRequestUrl;
+export default parseRequestUrl

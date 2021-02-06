@@ -1,11 +1,25 @@
-import data from '../data.js';
+import axios from 'axios';
+
 const HomeScreen = {
-  render: () => {
-    const { products } = data;
+  render: async () => {
+    const response = await axios({
+      url: 'http://localhost:5000/api/products',
+      headers: {
+        'Content-type': 'application/json',
+      },
+    });
+
+    if (!response || response.statusText !== 'OK') {
+      return '<div>Error in getting data</div>';
+    }
+
+    const products = response.data;
+
     return `
       <ul class="products">
-        ${products.map(
-          (product) => `
+        ${products
+          .map(
+            (product) => `
           <li>
               <div class="product">
                 <a href="#/product/${product._id}">
@@ -25,7 +39,8 @@ const HomeScreen = {
               </div>
             </li>
         `
-        ).join("\n")}
+          )
+          .join('\n')}
       </ul>
     `;
   },

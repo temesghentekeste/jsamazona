@@ -63,3 +63,40 @@ VI. Create Node.JS Server
   7. create route for api/products
   8. return products in data.js
   9. run npm start
+
+VII. Load products From Backend
+  1. edit HomeScreen.js
+  2. make render async
+  3. fetch product from '/api/products' in reder()
+  4. make rotuer() asyc and call await HomeScreen.render()
+
+
+VII. Add Webpack
+  1. cd frontend
+  2. npm i -D webpack webpack-cli webpack-dev-server
+  3. npm uninstall live-server
+  4. "start": "webpack-dev-server --mode development --watch-content-base --open"
+     for webpack 4 or 5: webpack serve --watch-content-base --open
+  5. move index.html, style.css, and images to frontend folder
+  6. rename app.js to index.js
+  7. update index.html
+  8. add <script src="main.js"></script> before body
+  9. npm start
+  10. npm i axios
+  11. change fetch to axios in HomeScreen
+
+IX. Install Babel for ES6 Syntax
+  1. npm i -D babel core, cli, node, preset-env
+    npm i -D @babel/core @babel/cli @babel/node @babel/preset-env
+  2. Create .babelrc and set presets to @babel/preset-env
+  3. npm i -D nodemon
+  4. set start: nodemon --watch backend --exec babel-node backend/server.js
+  6. Convert require to import in server.js
+  7. npm start
+
+X. Install VSCode extensions
+  1. JavaScript (ES6) code snippets
+  2. ES7 React/Redux/GraphQL/React-Native snippets
+  3. Prettier code formatter
+  4. HTML&LESS grammar injections
+  6. CSS Peek

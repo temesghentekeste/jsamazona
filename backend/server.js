@@ -1,11 +1,11 @@
-const express = require('express');
-const data = require('./data');
+import express from 'express';
+import cors from 'cors';
+import data from './data';
 
 const app = express();
-
+app.use(cors());
 app.get('/api/products', (req, res) => {
-  res.send(data);
+  res.send(data.products);
 });
 
-
-app.listen(3000, () => console.log('Server running at port 3000'))
+app.listen(5000, () => console.log('Serve at http://localhost:5000'));

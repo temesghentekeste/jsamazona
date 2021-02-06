@@ -1,4 +1,4 @@
-export const parseRequestUrl = () => {
+const parseRequestUrl = () => {
   const url = document.location.hash.toLowerCase();
   const request = url.split('/');
 
@@ -8,3 +8,5 @@ export const parseRequestUrl = () => {
     action: request[3],
   };
 };
+
+export default parseRequestUrl;

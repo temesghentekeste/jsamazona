@@ -71,7 +71,7 @@ VII. Load products From Backend
   4. make rotuer() asyc and call await HomeScreen.render()
 
 
-VII. Add Webpack
+VIII. Add Webpack
   1. cd frontend
   2. npm i -D webpack webpack-cli webpack-dev-server
   3. npm uninstall live-server
@@ -100,3 +100,15 @@ X. Install VSCode extensions
   3. Prettier code formatter
   4. HTML&LESS grammar injections
   6. CSS Peek
+
+XI Create Rating Component
+  1. create components/Rating.js
+  2. create div.rating
+  3. link to fontawesome.css in index.html
+  4. define Rating object with render()
+  5. if !props.value return empty div
+  6. else use fa fa-star, fa-star-half-o and fa-star-o
+  7. last span for props.text || ''
+  8. style div.rating, span and last span
+  9. edit HomeScreen
+  10. add div.product-rating and use Rating component

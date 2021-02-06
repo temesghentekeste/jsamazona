@@ -51,6 +51,7 @@ const Rating = {
               : 'fa fa-star-o'
           }"></i>
         </span>
+        <span>${props.text || '' }</span>
       </div>
     `;
   },

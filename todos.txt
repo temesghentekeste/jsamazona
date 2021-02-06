@@ -93,3 +93,10 @@ IX. Install Babel for ES6 Syntax
   4. set start: nodemon --watch backend --exec babel-node backend/server.js
   6. Convert require to import in server.js
   7. npm start
+
+X. Install VSCode extensions
+  1. JavaScript (ES6) code snippets
+  2. ES7 React/Redux/GraphQL/React-Native snippets
+  3. Prettier code formatter
+  4. HTML&LESS grammar injections
+  6. CSS Peek

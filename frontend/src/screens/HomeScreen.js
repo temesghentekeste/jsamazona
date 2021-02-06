@@ -9,7 +9,6 @@ const HomeScreen = {
       },
     });
 
-
     if (!response || response.statusText !== 'OK') {
       return '<div>Error in getting data</div>';
     }
@@ -18,8 +17,9 @@ const HomeScreen = {
 
     return `
       <ul class="products">
-        ${products.map(
-    (product) => `
+        ${products
+          .map(
+            (product) => `
           <li>
               <div class="product">
                 <a href="#/product/${product._id}">
@@ -38,8 +38,9 @@ const HomeScreen = {
                 </div>
               </div>
             </li>
-        `,
-  ).join('\n')}
+        `
+          )
+          .join('\n')}
       </ul>
     `;
   },

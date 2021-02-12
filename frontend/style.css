@@ -45,13 +45,32 @@ a:hover {
   color: #f08040;
 }
 
+button {
+  font: 1.6rem helvatica;
+  padding: 1rem;
+  border: 0.1rem #808080 solid;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 0.1rem solid #404040;
+}
+
+button.primary {
+  background-color: #ffc000;
+}
+
+.fw {
+  width: 100%;
+}
 header a {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
 }
 
-.brand  a{
+.brand a {
   font-size: 3rem;
 }
 
@@ -70,7 +89,7 @@ header a {
   margin: 1rem;
   margin-bottom: 0;
   height: 42rem;
-  border-right: .2rem #e0e0e0 solid;
+  border-right: 0.2rem #e0e0e0 solid;
 }
 
 .product {
@@ -120,4 +139,53 @@ header a:hover {
 .rating span:last-child {
   color: #444;
   font-size: 1.4rem;
+}
+
+/* Product details page */
+.content {
+  padding: 1rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.details-image {
+  flex: 2 1 60rem;
+}
+
+.details-image img {
+  max-width: 60rem;
+  width: 100%;
+}
+
+.details-info,
+.details-action {
+  flex: 1 1 30rem;
+}
+
+.details-info ul,
+.details-action ul {
+  padding: 0;
+  list-style: none;
+}
+
+.details-info h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.details-info li,
+.details-action li {
+  margin-bottom: 1rem;
+}
+
+.details-action {
+  border: 0.1rem #808080 solid;
+  border-radius: 0.5rem;
+  background-color: #f8f8f8;
+  padding: 1rem;
 }

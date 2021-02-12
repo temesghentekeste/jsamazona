@@ -25,7 +25,7 @@ const ProductScreen = {
               <li>
                 ${Rating.render({
                   value: product.rating,
-                  text: `${product.numbReviews} Reviews`,
+                  text: `${product.numReviews} Reviews`,
                 })}
               </li>
               <li>
@@ -53,7 +53,7 @@ const ProductScreen = {
                     }
                 </li>
                 <li>
-                    <button id="add-button" class="primary">Add to Cart</button>
+                    <button id="add-button" class="fw primary">Add to Cart</button>
                 </li>
               </ul>
           </div>

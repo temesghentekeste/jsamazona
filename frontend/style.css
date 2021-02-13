@@ -74,6 +74,14 @@ header a {
   font-size: 3rem;
 }
 
+.success {
+  color: #40c040;
+}
+
+.error {
+  color: #c04040;
+}
+
 /* products */
 .products {
   display: flex;

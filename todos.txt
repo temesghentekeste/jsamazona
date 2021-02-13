@@ -127,3 +127,17 @@ XII Product Screen
   10. create add to cart button with add-button id
   11. after_render() to add event to the button
   12. redirect user to cart/:product_id
+
+XIII  Add to Cart Action
+  1. create a CartScreen.js
+  2. parseRequestURL()
+  3. getProduct(request.id)
+  4. addToCart
+  5. getCartItems
+  6. cartItems.find
+  7. if exist item update qty
+  8. else add item
+  9. setCartItems
+  10. create add to cart button with add-button id
+  11. after_render() to add event to the button
+  12. redirect user to cart/:product_id
